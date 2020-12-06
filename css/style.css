@@ -1,7 +1,7 @@
 /* Google Fonts Press Start 2P*/
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 :root {
-    --primary-brand-color: #ff4500;
+    --primary-brand-color:green;
     --secondary-brand-color:dodgerblue;
     --logo-font:'Press Start 2P', 'Cursive';
     --accent-color: rgb(165, 150, 36);
@@ -54,6 +54,7 @@ main {
     border: 1px solid var(--primary-brand-color);
     box-shadow: 1px 1px 12px 1px var(--shadow-gray-light);
     font-size: 30px;
+    text-transform: capitalize;
 }
 
 .card:hover {
