@@ -1,0 +1,75 @@
+/* Google Fonts Press Start 2P*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+:root {
+    --primary-brand-color: #ff4500;
+    --secondary-brand-color:dodgerblue;
+    --logo-font:'Press Start 2P', 'Cursive';
+    --accent-color: rgb(165, 150, 36);
+    --shadow-gray-light: #d3d3d3;
+    --shadow-gray-dark:#1c1b1b;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Helvetica;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+header, footer {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 100%;
+    height: 65px;
+    background-color: var(--primary-brand-color);
+}
+
+header {
+
+    padding-left: 500px;
+    font-family: var(--logo-font);
+    text-shadow: 2px 2px 2px 15px;
+}
+/* this is how to apply styling to one element within the header. also text shadow has 4 values which are horizontal spread value, vertical value and blur effect, then last value is the color youw ant it to be */
+
+header > h1{
+    color: var(--accent-color);
+    text-shadow: 1px 1px 3px var(--secondary-brand-color)
+}
+footer {
+    justify-content:center;
+}
+main {
+    flex-grow: 1;
+}
+.card {
+    width: 300px;
+    height: 150px;
+    border-radius:12px;
+    margin: 10px;
+    font-family: helvetica;
+    border: 1px solid var(--primary-brand-color);
+    box-shadow: 1px 1px 12px 1px var(--shadow-gray-light);
+    font-size: 30px;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 15px 1px var(--shadow-gray-dark);
+}
+#collection {
+    flex-wrap: wrap;
+}
+
+.outline {
+    border: 1px dotted var(--secondary-brand-color);
+}
+
+.flex-ctr{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
